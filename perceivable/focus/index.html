@@ -4,33 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focus : Precievable : Accessibility : Scott Logic</title>
+    <link rel="stylesheet" href="../../common.css">
     <style>
-        html { font-size: 62%; }
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 1.6rem;
-            line-height: 2rem;
-            max-width: 60vw;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        summary { cursor: pointer; }
-        pre {
-            background: #f4f4f4;
-            border: 1px solid #ddd;
-            border-left: 0.3rem solid #f36d33;
-            color: #666;
-            page-break-inside: avoid;
-            font-family: monospace;
-            font-size: 1.4rem;
-            line-height: 1.6;
-            margin-bottom: 1.6em;
-            max-width: 100%;
-            overflow: auto;
-            padding: 1rem 1.6rem;
-            display: block;
-            word-wrap: break-word;
-        }
         form {
             display: grid;
             grid-auto-rows: auto; 
@@ -43,12 +18,30 @@
             caret-color: transparent;
             outline: none;
         }
+        .examples {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .examples img {
+            width: 45%;
+        }
     </style>
 </head>
 <body>
     <h1>Visual Focus</h1>
     <section class="tutorial">
         <h2>Explanation</h2>
+        <p>
+            Visual Focus is a cue to indicate for the user which part of the application is currently active. It can be a the window, and it can be a button.</p>
+        </p>
+        <p class="examples">
+            <img src="mac-screenshot.png" title="Screenshot of mac with two windows, one of them is active" />
+            <img src="dialog-buttons.jpg" title="Screenshot of a dialog with one button focused" />
+            <div class="caption">Can you identify which of the items in the screenshot is focused? how?</div>
+        </p>
         <p>
             Visible focus is an essential aspect of web accessibility that ensures users with visual impairments or motor disabilities can navigate and interact with web content easily.
             When a user interacts with a web page using the keyboard or a screen reader, the focus is applied to elements such as links, form fields, buttons, etc.
