@@ -16,4 +16,6 @@
 - Compare your output with the following video:
 
 ## Wireframe/video/screenshot
-<iframe width="560" height="315" src="../designer_solution/design_solution.mov" frameborder="0" allowfullscreen></iframe>
+<video> 
+    <source src="design_solution.mov" type="video/quicktime">
+</video>
