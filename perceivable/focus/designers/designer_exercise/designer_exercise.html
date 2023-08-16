@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus : Preceivable : Accessibility : Scott Logic</title>
+    <link rel="stylesheet" href="./designer_exercise.css">
+    <style>
+        form {
+            display: grid;
+            grid-auto-rows: auto; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr; 
+            gap: 1rem 1rem; 
+            grid-template-areas: ". ."; ;
+        }
+        * {
+            caret-color: transparent;
+            outline: none;
+        }
+        .examples {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .examples img {
+            width: 35%;
+        }
+    </style>
+</head>
+<body>
+    <section class="tutorial">
+        <h1>Visual Focus - Exercise</h1>
+        <p>
+            Visual Focus is a cue to indicate for the user which part of the application is currently active.
+            Now it's time to apply what you learned in the <a href="../Focus_Intro.html">introduction section</a>.
+            Try to first fix it on your own, and then compare your code with the solution.
+        </p>
+    
+        <h2>Tasks</h2>
+        <details>
+            <summary>MVP</summary>
+            <p>
+                Write instructions for the deverloper to fix the accessibility of the following form.Provide visual reference (mock screenshot or video). 
+            </p>
+            <ul>
+                <li>Only one focus at a time.</li>
+                <li>All interactive elements should have a focused state (not just inputs, but buttons, links, etc)</li>
+                <li>It should be obvious what element is focused</li>
+                <li>It should be distinguishable from other state such as disabled or active</li>
+                <li>Focused radio inputs should be easily identifiable from selected ones</li>
+                <li>focused links/buttons should be different and easily indefinable from hovered or visited links/buttons</li>
+                <li>focus styles should avoid "upsetting" the layout (e.g. adding a 1px border can make an input 2px wider than it was before focus. This is fine as long as it doesn't break the page flow)</li>
+                <li>It should consider the accessibility - color and contrast should be inclusive of users with vision impairments. Color alone is probably not sufficient to show focus.</li>
+                <li>It should consider any variation of background a focused element may appear on (a double halo/border can be useful to target dark and light backgrounds)</li>
+                <li>It should consider that some browser modes may interfere with, or eliminate, some styles (dark modes, high-contrast modes etc)</li>
+                <li>It should work for both keyboard focus and mouse focus</li>
+                <li>Invisible elements should generally not be focusable (an exception would be a skip link, for example)</li>
+                <li>Compare your out with the following <a href="design_solution.css" target="_blank">CSS</a> and <a href="design_solution.css" title="solution video reference" target="_blank">video</a> or <a href="develop_solution.html" title="developer solution" target="_self">see it in action</a>.</li>
+            </ul>
+         </details>
+         
+        <details>
+            <summary>Extensions</summary>
+            <h3>Get feedback on your design</h3>
+            <p> Show your design to colleagues to get feedback and ideas for improving your design. You could ask colleagues from development, testing, BA, and UX designers:</p>
+                <li class="to-do">Ask if your design is clear and can be implemented</li>
+                <li class="to-do">Ask what improvements could be made</li>
+            </p>
+        </details>
+    </section>
+    <section class="contact-form-container">
+        <h2>Contact form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <div><input type="text" id="name"></div>
+    
+            <label for="email">Email:</label>
+            <div><input type="email" id="email"></div>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" autofocus></textarea>
+    
+            <label for="phone">Phone:</label>
+            <div><input type="tel" id="phone"></div>
+
+            <div for="phone">Contact hours:</div>
+            <div>
+                <div>
+                    <input type="radio" name="contactHours" id="contactHours_workHours" value="workHours">
+                    <label for="contactHours_workHours">Work hours</label>
+                </div>
+                <div>
+                    <input type="radio" name="contactHours" id="contactHours_nonWorkHours" value="nonWorkHours">
+                    <label for="contactHours_workHours">Non Work hours</label>
+                </div>
+                <div>
+                    <input type="radio" name="contactHours" id="contactHours_any" value="any">
+                    <label for="contactHours_any">Any</label>
+                </div>
+            </div>
+    
+            <div>
+                <input type="checkbox" name="newsletter" id="newsletter" value="subsrive">
+                <label for="newsletter">I would like to hear about <a href="" alt="visited link">events</a> and <a href="link.html">deals</a></label>
+            </div>
+            <span></span><span></span>
+            <div><input type="submit" value="Submit"></div>
+        </form>
+    </section>
+</body>
+</html>

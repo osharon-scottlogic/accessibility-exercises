@@ -26,28 +26,29 @@
             justify-content: center;
         }
         .examples img {
-            width: 45%;
+            width: 35%;
         }
     </style>
 </head>
 <body>
-    <h1>Visual Focus</h1>
     <section class="tutorial">
-        <h2>Exercise</h2>
+        <h1>Visual Focus - Exercise</h1>
         <p>
             Visual Focus is a cue to indicate for the user which part of the application is currently active.
-            Now it's time to apply what you learned in the <a href="index.html">introduction section</a>.
+            Now it's time to apply what you learned in the <a href="../Focus_Intro.html">introduction section</a>.
             Try to first fix it on your own, and then compare your code with the solution.
         </p>
     
-        <h4>Tasks</h4>
+        <h2>Tasks</h2>
         <details>
             <summary>MVP</summary>
-            <h5>Visual focus</h5>
-            <p>Have a look at the contact form below and click on the fields. As you can see the form fields are not highlighted when you click on them. They lack visual focus.</p>
-            <ul><li><b>Fix the visual-focus issues in the form.</b></li></ul>
-            <ul><li><b>Ensure the first field has default focus.</b></li></ul>
-            <h5>Keyboard focus</h5>
+            <h3>Visual focus</h3>
+            <p>We were tasked to provide a contact form. The previous developer, whose name will not be mentioned wrote the code of the contact form below.
+                Have a look at the contact form and click on the fields. As you can see the form fields are not highlighted when you click on them. They lack visual focus.</p>
+            <ul><li class="to-do">Fix the visual-focus issues in the form.</li>
+            <li class="to-do">Ensure the first field has default focus.</li>
+            </ul>
+            <h3>Keyboard focus</h3>
             <p>Try to navigate through it using your keyboard. You can use the following controls:</li>
             <ul><ul>
                 <li>Tab: Move to the next interactive element</li>
@@ -57,22 +58,24 @@
                 <li>Enter: Submit the form</li>
             </ul>
             </ul>
-            <ul><li><b>Ensure the form so that it can be navigated using only a keyboard</b></li></ul>
+            <ul><li class="to-do">Ensure the form so that it can be navigated using only a keyboard</li></ul>
          </details>
          
-            <details>
-                <summary>Extensions</summary>
-                <h5>Use a screen reader</h5>
+        <details>
+            <summary>Extensions</summary>
+            <h3>Use a screen reader</h3>
             <p>Now that your form has the correct visual and keyboard focus, you can also have a listen to what this form sounds like using a screen reader. 
                 To <b>activate</b> and <b>deactivate</b> the narrator on windows, use <b>Ctrl + Windows key + Enter</b>
-                <ul><li>Navigate the form using a screen reader. Can you navigate the form with your eyes closed? What do you notice?
-                    Can you think of anything that could be improved? 
-                    <li>Try improving the form for screen reader use. You can look at the <a href="screenreader_use.html">Introduction to screen reader use</a> to help you with this</li>
-                </li></ul>
+            <ul>
+                <li class="to-do">Navigate the form using a screen reader. Can you navigate the form with your eyes closed?</li>
+                <li class="to-do">What do you notice? Make a note of anything that could be improved.</li>
+                <li class="to-do">Try improving the form for screen reader use. </li>
+            </ul>
+            <p>You can look at the <a href="screenreader_use.html">Introduction to screen reader use</a> to help you with this</li></p>
             </p>
-            </details>
+        </details>
     </section>
-    <section className="contact-form-container">
+    <section class="contact-form-container">
         <h2>Contact form</h2>
         <form>
             <label for="name">Name:</label>

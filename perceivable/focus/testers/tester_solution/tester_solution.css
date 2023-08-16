@@ -59,3 +59,29 @@ input[type=submit]{
     font-size: 1.6rem;
     border-radius: 0.5rem;
 }
+
+.contact-form-container{
+    border: 3px solid lightgray;
+    padding: 1.5rem;
+}
+
+.tutorial{
+    background-color: aliceblue;
+    padding: 2rem;
+}
+
+summary{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.to-do{
+    font-size: 1.5rem;
+    font-weight:bold;
+    color: green;
+    list-style: none;
+}
+
+.to-do:before{
+    content: '✓  ';
+}

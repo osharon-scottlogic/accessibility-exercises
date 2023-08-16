@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus : Precievable : Accessibility : Scott Logic</title>
+    <link rel="stylesheet" href="./tester_solution.css">
+    <style>
+        form {
+            display: grid;
+            grid-auto-rows: auto; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr; 
+            gap: 1rem 1rem; 
+            grid-template-areas: ". ."; ;
+        }
+        * {
+            caret-color: transparent;
+            outline: none;
+        }
+        .examples {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .examples img {
+            width: 35%;
+        }
+    </style>
+</head>
+<body>
+    <section class="tutorial">
+        <h1>Visual Focus - Exercise</h1>
+        <p>
+            Visual Focus is a cue to indicate for the user which part of the application is currently active.
+            Now it's time to apply what you learned in the <a href="../Focus_Intro.html">introduction section</a>.
+            Try to first fix it on your own, and then compare your code with the solution.
+        </p>
+    
+        <h2>Tasks</h2>
+        <details>
+            <summary>MVP</summary>
+            <h3>Visual focus</h3>
+            <p>We were tasked to provide a contact form. The previous developer, whose name will not be mentioned wrote the code of the contact form below. </p>
+            <h3>Keyboard focus</h3>
+            <p>Try to navigate through it using your keyboard. You can use the following controls:</p>
+            <ul>
+                <ul>
+                    <li>Tab: Move to the next interactive element</li>
+                    <li>Shift + Tab:Move to the previous interactive element</li>
+                    <li>Arrow keys: Navigate through radio buttons and checkboxes</li>
+                    <li>Space: Activate the currently focused element</li>
+                    <li>Enter: Submit the form</li>
+                </ul>
+            </ul>
+            <ul>
+                <li>
+                    Create a test case for 2 tests regarding 2 pages index.html and design_solution.html:
+                    <ul>
+                        <li class="to-do">Test for mouse navigation visual focus</li>
+                        <li class="to-do">Test for keyboard navigation visual focus</li>
+                        <ul>                
+                            <li>Write down the expectations for the tests regarding both pages</li>
+                            <li>Click on the first text box</li>
+                            <li>Navigate through the other text boxes using mouse and keyboard navigations</li>
+                            <li>Take note of the outcome of the tests regarding visual focus in the test case</li>
+                            <li>Repeat both tests in design_solution.html and compare results from both pages</li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+         </details>
+         
+        <details>
+            <summary>Extensions</summary>
+            <h3>Write automated tests for keyboard focus</h3>
+                <li class="to-do">Write automated tests (unit/e2e) to test keyboard focus</li>
+            </p>
+        </details>
+    </section>
+    <section class="contact-form-container">
+        <h2>Contact form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" autofocus>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+    
+            <label for="message">Message:</label>
+            <textarea id="message" autofocus></textarea>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone">
+
+            <div for="phone">Contact hours:</div>
+            <div>
+                    <input type="radio" name="contactHours" id="contactHours_workHours" value="workHours">
+                    <label for="contactHours_workHours">Work hours</label>
+
+                    <input type="radio" name="contactHours" id="contactHours_nonWorkHours" value="nonWorkHours">
+                    <label for="contactHours_nonWorkHours">Non Work hours</label>
+
+                    <input type="radio" name="contactHours" id="contactHours_any" value="contactHours_any">
+                    <label for="contactHours_any">Any</label>
+            </div>
+    
+            <div>
+                <input type="checkbox" name="newsletter" id="newsletter" value="newsletter">
+                <label for="newsletter">I would like to hear about <a href="events.html" >events</a> and <a href="link.html">deals</a></label>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
