@@ -148,39 +148,35 @@ button:focus {
         <h2>Contact form</h2>
         <form>
             <label for="name">Name:</label>
-            <div><input type="text" id="name"></div>
+            <input type="text" id="name" autofocus>
     
             <label for="email">Email:</label>
-            <div><input type="email" id="email"></div>
+            <input type="email" id="email">
     
             <label for="message">Message:</label>
             <textarea id="message" autofocus></textarea>
     
             <label for="phone">Phone:</label>
-            <div><input type="tel" id="phone"></div>
+            <input type="tel" id="phone">
 
             <div for="phone">Contact hours:</div>
             <div>
-                <div>
                     <input type="radio" name="contactHours" id="contactHours_workHours" value="workHours">
                     <label for="contactHours_workHours">Work hours</label>
-                </div>
-                <div>
+
                     <input type="radio" name="contactHours" id="contactHours_nonWorkHours" value="nonWorkHours">
-                    <label for="contactHours_workHours">Non Work hours</label>
-                </div>
-                <div>
-                    <input type="radio" name="contactHours" id="contactHours_any" value="any">
+                    <label for="contactHours_nonWorkHours">Non Work hours</label>
+
+                    <input type="radio" name="contactHours" id="contactHours_any" value="contactHours_any">
                     <label for="contactHours_any">Any</label>
-                </div>
             </div>
     
             <div>
-                <input type="checkbox" name="newsletter" id="newsletter" value="subsrive">
-                <label for="newsletter">I would like to hear about <a href="" alt="visited link">events</a> and <a href="link.html">deals</a></label>
+                <input type="checkbox" name="newsletter" id="newsletter" value="newsletter">
+                <label for="newsletter">I would like to hear about <a href="events.html" >events</a> and <a href="link.html">deals</a></label>
             </div>
-            <span></span><span></span>
-            <div><input type="submit" value="Submit"></div>
+
+            <input type="submit" value="Submit">
         </form>
     </section>
 </body>
