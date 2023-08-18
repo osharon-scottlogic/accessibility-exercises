@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Title: ScottLogic</title>
+    <link rel="stylesheet" href="./introduction.css">
+</head>
+<body>
+    <h1>Visual Focus</h1>
+    <section class="tutorial">
+        <h2>Explanation</h2>
+        <p>
+            Visual Focus is a cue to indicate for the user which part of the application is currently active. It can be a the window, and it can be a button.</p>
+        </p>
+        <p class="examples">
+            <img src="../resources/mac-screenshot.png" title="Screenshot of mac with two windows, one of them is active" />
+            <img src="../resources/dialog-buttons.jpg" title="Screenshot of a dialog with one button focused" />
+            <div class="caption">Can you identify which of the items in the screenshot is focused? how?</div>
+        </p>
+        <p>
+            Visible focus is an essential aspect of web accessibility that ensures users with visual impairments or motor disabilities can navigate and interact with web content easily.
+            When a user interacts with a web page using the keyboard or a screen reader, the focus is applied to elements such as links, form fields, buttons, etc.
+            This focus is represented by a visual indication, usually a focus ring or outline, around the active element.
+        </p>
+        <p>
+            By default, most browsers have a built-in focus indicator that outlines the focused element, but the appearance of this focus indicator can vary depending on the browser and operating system, and sometimes it may be difficult to see or even hidden due to custom CSS styles.
+        </p>
+        <p>
+            To improve accessibility and make the focus indicator clearly visible, it's essential to customize the focus styles using CSS.
+            Here are some best practices to ensure a visible focus:
+        </p>
+        <p>
+            <h3>Use CSS to Style Focus</h3>
+            You can modify the appearance of the focus indicator to make it more prominent and noticeable.
+            Some common approaches include changing the color, thickness, or style of the focus ring.
+            For example:
+            <pre><code>/* Example of a blue focus ring with thicker outline */
+:focus {
+    outline: 2px solid blue;
+}            </code></pre>
+        </p>
+        <p>
+            <h3>Avoid Removing Focus Outlines</h3>
+            It's crucial not to remove the focus indicator entirely, as it helps users understand where they are on the page and how they are interacting with the content.
+            Some websites, in an attempt to improve aesthetics, remove focus outlines, but this creates accessibility issues.
+        </p>
+        <p>
+            <h3>Ensure Sufficient Contrast</h3>
+            Make sure that the focus indicator color has enough contrast against the background color to be clearly visible for all users, including those with low vision.
+        </p>
+        <p>
+            <h3>Focus States for Different Elements</h3>
+            Customize the focus indicator for various interactive elements like links, buttons, form fields, etc., so users can easily identify the type of element they are interacting with.
+        </p>
+        <pre><code>/* Example of a red focus ring for links */
+a:focus {
+    outline: 2px solid red;
+}
+/* Example of a green focus ring for buttons */
+button:focus {
+    outline: 2px solid green;
+}</code></pre>
+        <p>
+            <h3>Test with Keyboard Navigation</h3>
+            Check the visibility and appearance of the focus indicator using keyboard navigation. You can use the "Tab" key to move through interactive elements on your website and observe the focus styles.
+        </p>
+        <p>
+            Remember that visible focus is not only beneficial for users with disabilities but also for all users, as it provides a clear indication of the current active element. By following these best practices, you can improve the accessibility of your HTML content and create a more inclusive web experience for everyone.
+        </p>
+    </section>
+    <section class="exercise-instructions">
+        <h2>Exercises</h2>
+        <h3><a href="../b_exercise/exercise.html"> > To the practice exercises</a></h3>
+    </section>
+</body>
+</html>

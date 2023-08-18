@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Title: Scott Logic</title>
+    <link rel="stylesheet" href="./solution.css">
+     <style>
+        form {
+            display: grid;
+            grid-auto-rows: auto; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr; 
+            gap: 1rem 1rem; 
+            grid-template-areas: ". ."; ;
+        }
+        * {
+            caret-color: transparent;
+            outline: none;
+        }
+        .examples {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .examples img {
+            width: 35%;
+        }
+    </style>
+</head>
+<body>
+    <section class="tutorial">
+        <h1>Visual Focus - Solution</h1>
+        <p>
+            Visual Focus is a cue to indicate for the user which part of the application is currently active.
+            Below you can find the solution to <a href="../b_exercise/exercise.html">the visual focus exercise</a>.
+            Compare your own solution to the one below. There's not always one correct solution, so don't worry if your solution is different.
+        </p>
+    
+        <h2>Tasks</h2>
+        <details>
+            <summary>Designer solution</summary>
+            
+                <h3 class="task-container">Design Summary</h3>
+                <p>
+                    Adjust the form so that users can easily see which interactive element is in focus. 
+                    Make sure the first element of the form is in focus as a default.
+                    Users should be able to navigate the form by keyboard.
+                </p>
+                </ul>
+                <h3>Design Specifications</h3>
+                <ul>
+                    <li>Only one element should be in focus at a time</li>
+                    <li>All interactive elements should have a focused state (not just inputs, but also buttons, links, etc)</li>
+                    <li>Focus should be distinguishable from other states such as hover, visited, or active</li>
+                    <li>Focused radio buttons should be easily distinguishable from selected radio buttons</li>
+                    <li>Try to avoid changing the layout of the page with focus. Be mindful how the focus change interacts with other elements(e.g. when adding a 2px border the element will be wider than it was before focus, so check that there is enough space)</li>
+                    <li>To meet accessibility success criteria outlined in WCAG, ensure that:</li>
+                    <ul>
+                        <li>
+                            - When the keyboard focus indicator is visible, an area of the focus indicator meets all the following:
+                            <ul>
+                                <li>is at least as large as the area of a 2 CSS pixel thick perimeter of the unfocused component or sub-component, and</li>
+                                <li>has a contrast ratio of at least 3:1 between the same pixels in the focused and unfocused states.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <li>Make sure that there are at least two ways to show focus change, (e.g. a border and a colour change. Color alone is probably not sufficient to show focus.)</li>
+                    <li>Consider different variations of background a focused element may appear on (e.g. on dark mode, or high-contrast modes)</li>
+                    <li>Ensure visual focus change works for both keyboard focus and mouse focus</li>
+                    <li>Invisible elements should generally not be focusable (an exception would be a skip link, for example)</li>
+                    <li>Your output should look similar to the following example:</li>
+                </ul>
+                <p>Wireframe solution:</p>
+                <img src="../resources/visual_focus.png" alt="wireframe solution" class="example-images">
+        </details>
+
+        <details>
+            <summary>Developer solution</summary>
+                <p>Compare your solution to the one below and to the solution.css file. Did you miss anything?
+                    Did you do anything differently? If so, why?
+                </p>
+                <ul>
+                    <li>Compare your solution with the solution below</li> 
+                    <li>Check with the design solution. Did you implement all the design specifications?</li>
+                    <li>Check with the testing solution. Does your solution pass all the tests?
+                        If there are any automated tests, run your code through them and see if they pass.
+                    </li>
+                </ul>
+        </details>
+         
+        </details>
+            <details>
+            <summary>Tester solution</summary>
+            <h3>The solution should pass the following tests:</h3>
+            <ul>
+                <li>Description of certain feature behavior</li>
+                <li>Another description</li>
+                <li>Another description</li>
+                <li>Another description</li>
+                <li>Another description</li>
+            </ul>
+            <h3>Automated tests</h3>
+            <p>If there are any automated tests that can be written for this task, this is the behaviour they're testing for.</p>
+            <ul>
+                <li>Pseudocode Arrange</li>
+                <li>Pseudocode Act</li>
+                <li>Pseudocode Assert</li>
+            </ul>
+            <ul><ul><li>the tests can be found in the solution folder.</li></ul></ul>
+         
+        </details>
+    </section>
+    <section class="topic-exercise-container">
+        <h2>Contact form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" autofocus>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+    
+            <label for="message">Message:</label>
+            <textarea id="message" autofocus></textarea>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone">
+
+            <div for="phone">Contact hours:</div>
+            <div>
+                    <input type="radio" name="contactHours" id="contactHours_workHours" value="workHours">
+                    <label for="contactHours_workHours">Work hours</label>
+
+                    <input type="radio" name="contactHours" id="contactHours_nonWorkHours" value="nonWorkHours">
+                    <label for="contactHours_nonWorkHours">Non Work hours</label>
+
+                    <input type="radio" name="contactHours" id="contactHours_any" value="contactHours_any">
+                    <label for="contactHours_any">Any</label>
+            </div>
+    
+            <div>
+                <input type="checkbox" name="newsletter" id="newsletter" value="newsletter">
+                <label for="newsletter">I would like to hear about <a href="events.html" >events</a> and <a href="link.html">deals</a></label>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
