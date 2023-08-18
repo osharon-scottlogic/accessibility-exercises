@@ -1,3 +1,47 @@
+html { font-size: 62%; }
+body {
+    font-family: system-ui, -apple-system, sans-serif;;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+td, th {
+    padding: 0.5rem;
+}
+
+.caption {
+    font-size: 1.4rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.topic-exercise-container{
+    border: 3px solid lightgray;
+    padding: 1.5rem;
+}
+
+.tutorial{
+    background-color: aliceblue;
+    padding: 2rem;
+}
+
+summary{
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+li {
+  margin-left: 1rem;
+}
+
+.example-images{
+    width: 40%;
+    }
+
 html {
     --blue: rgb(43, 179, 187);
     --blue-dark: rgb(30 64 175);
@@ -8,12 +52,8 @@ html {
     --white: white;
   }
   
-  body {
-    font: 16px system-ui, -apple-system, sans-serif;
-  }
-  
   h2 {
-    font-size: 24px;
+    font-size: 2.5rem;
   }
   
   form {
@@ -22,7 +62,7 @@ html {
   
   label {
     display: inline;
-    font-size: 16px;
+    font-size: 1.7rem;
     color: var(--black);
     width: 100%;
     cursor: pointer;
@@ -34,7 +74,7 @@ html {
   }
   
   .form-field {
-    margin-bottom: 12px;
+    margin-bottom: 1.7rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -68,9 +108,9 @@ html {
   
   input[type="submit"] {
     display: block;
-    padding: 8px 12px;
+    padding: .5rem .75rem;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.8rem;
     text-align: center;
     color: var(--white);
     background-color: var(--blue);
@@ -103,7 +143,7 @@ html {
     background-color: var(--white);
     border: 1px solid var(--gray);
     border-radius: 4px;
-    margin-top: 4px;
+    margin-top: .25rem;
     width: 100%;
     transition: all 0.2s ease;
   }
@@ -132,8 +172,8 @@ html {
     cursor: pointer;
     appearance: none;
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 1.7rem;
+    height: 1.7rem;
     margin: 0 4px 0 0;
     border: 1px solid var(--gray);
     transition: all 0.2s ease;

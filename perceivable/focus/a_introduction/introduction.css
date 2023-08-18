@@ -1,0 +1,38 @@
+html { 
+    font-size: 62%;
+    background-color: aliceblue; 
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+pre code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 0.3rem solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    /* margin-bottom: 1.6em; */
+    width: fit-content;
+    overflow: auto;
+    padding: 1rem 1.6rem;
+    display: block;
+    word-wrap: break-word;
+}
+
+.example-images{
+    width: 40%;
+    }
+
+.caption {
+    font-size: 1.4rem;
+    font-style: italic;
+}
